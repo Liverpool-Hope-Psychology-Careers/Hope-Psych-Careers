@@ -3,7 +3,7 @@
 
 A web resource helping psychology students explore career pathways, understand what employers look for, and take practical steps during their degree.
 
-Live site: **https://25000774-lab.github.io/psychology-careers-hub/**
+Live site: **https://liverpool-hope-psychology-careers.github.io/Hope-Psych-Careers/**
 
 ---
 
