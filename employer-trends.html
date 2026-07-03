@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employer Trends and Graduate Outcomes — Psychology Careers Hub | Liverpool Hope University</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+  .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+  .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; height: 48px; }
+  .site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
+  .site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; transition: background 0.15s; }
+  .site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
+  .site-nav-dropdown { position: relative; }
+  .site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
+  .site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
+  .site-nav-menu a:hover { background: #f0f4ff; }
+  .site-nav-dropdown:hover .site-nav-menu { display: block; }
+  .page-hero { background: linear-gradient(135deg, #1a3a5c 0%, #1a4a6a 100%); color: white; padding: 3rem 2rem; }
+  .page-hero-inner { max-width: 960px; margin: 0 auto; }
+  .page-hero-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.65; margin-bottom: 10px; }
+  .page-hero h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; line-height: 1.2; }
+  .page-hero p { font-size: 15px; opacity: 0.85; line-height: 1.75; max-width: 640px; }
+  .container { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+  .section { margin-bottom: 3rem; }
+  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 12px; }
+  .section-title { font-size: 22px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+  .section-body { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 720px; }
+  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 2.5rem 0; }
+  .framing-box { background: #1a3a5c; border-radius: 14px; padding: 2rem 2.5rem; margin-bottom: 2rem; }
+  .framing-box-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #38BDF8; margin-bottom: 14px; }
+  .framing-box-title { font-size: 22px; font-weight: 700; color: white; margin-bottom: 14px; line-height: 1.3; letter-spacing: -0.02em; }
+  .framing-box-body { font-size: 15px; color: rgba(255,255,255,0.82); line-height: 1.75; }
+  .framing-box-body strong { color: white; }
+  .framing-box-body p + p { margin-top: 1rem; }
+  .pipeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 12px; margin: 1.5rem 0; }
+  .pipeline-step { background: white; border: 1.5px solid #e0e0e0; border-radius: 10px; padding: 1rem; text-align: center; }
+  .pipeline-step-number { font-size: 26px; font-weight: 700; color: #1a3a5c; line-height: 1; margin-bottom: 5px; }
+  .pipeline-step-label { font-size: 12px; color: #555; line-height: 1.4; }
+  .pipeline-step-sub { font-size: 11px; color: #999; margin-top: 4px; }
+  .pipeline-step.highlight { border-color: #0891B2; background: #E0F2FE; }
+  .pipeline-step.highlight .pipeline-step-number { color: #0E7490; }
+  .pipeline-step.dim { opacity: 0.55; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 1.5rem; }
+  .stat-card { background: white; border: 1.5px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
+  .stat-number { font-size: 34px; font-weight: 700; color: #1a3a5c; line-height: 1; margin-bottom: 6px; }
+  .stat-label { font-size: 13px; color: #444; line-height: 1.5; }
+  .stat-source { font-size: 11px; color: #999; margin-top: 6px; font-style: italic; }
+  .highlight-box { background: #e8f0fb; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
+  .highlight-box p { font-size: 15px; color: #1a3a5c; line-height: 1.75; }
+  .highlight-box strong { font-weight: 600; }
+  .note-box { background: #fff8e1; border: 1px solid #ffe082; border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 14px; color: #5a4000; line-height: 1.65; }
+  .finding-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; margin-bottom: 1.5rem; }
+  .finding-card { background: white; border: 1.5px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
+  .finding-accent { width: 36px; height: 4px; border-radius: 2px; margin-bottom: 10px; }
+  .finding-title { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .finding-body { font-size: 13px; color: #444; line-height: 1.65; }
+  .finding-source { font-size: 11px; color: #999; margin-top: 8px; font-style: italic; }
+  .support-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .support-card { background: white; border: 1.5px solid #e0e0e0; border-radius: 12px; padding: 1.4rem; }
+  .support-title { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 8px; }
+  .support-body { font-size: 13px; color: #444; line-height: 1.65; }
+  .support-body ul { padding-left: 1.1rem; margin-top: 8px; }
+  .support-body li { margin-bottom: 4px; }
+  .support-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 10px; font-size: 12px; font-weight: 600; color: #1a5fa8; text-decoration: none; }
+  .support-link:hover { text-decoration: underline; }
+  .sources-box { background: #f5f5f3; border-radius: 8px; padding: 1rem 1.25rem; }
+  .sources-list { list-style: none; font-size: 12px; color: #666; line-height: 1.9; }
+  .sources-list a { color: #1a5fa8; text-decoration: none; }
+  .sources-list a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<!-- UNIVERSITY HEADER -->
+<div style="background:#1a3a5c;padding:12px 2rem;">
+  <div style="max-width:960px;margin:0 auto;display:flex;align-items:center;gap:20px;">
+    <a href="index.html" style="display:flex;align-items:center;text-decoration:none;flex-shrink:0;">
+      <img src="logo.png" alt="Psychology at Liverpool Hope University" style="height:120px;width:auto;">
+    </a>
+    <div style="border-left:1px solid rgba(255,255,255,0.2);padding-left:20px;">
+      <div style="font-size:18px;font-weight:700;color:white;line-height:1.3;">Liverpool Hope University</div>
+      <div style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:4px;">School of Psychology</div>
+    </div>
+  </div>
+</div>
+
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+    <a class="site-nav-link" href="employer-trends.html">Graduate Outcomes</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Career Pathways &#9660;</span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+    <a class="site-nav-link" href="roadmap.html">Build Your Employability</a>
+    <a class="site-nav-link" href="alumni.html">Alumni</a>
+  </div>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">Liverpool Hope University — School of Psychology</div>
+    <h1>Graduate Outcomes, Employer Trends and Practical Support</h1>
+    <p>What the evidence actually says about where psychology graduates go, what careers count as psychology-related, and what employers look for — alongside practical tools to help you prepare.</p>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <div class="framing-box">
+      <div class="framing-box-label">The most important thing to understand</div>
+      <div class="framing-box-title">Most psychology students think there is one path. The evidence shows there are thousands.</div>
+      <div class="framing-box-body">
+        <p>Research by the Nuffield Trust found that <strong>91% of psychology undergraduates want a career in mental health at the outset of their degree</strong> — most specifically aiming for clinical psychology. By final year that figure falls to 79%, but still far exceeds the proportion who will reach registered clinical roles.</p>
+        <p>The gap is largely one of awareness. Of around 20,300 psychology graduates per year, roughly 12,000 go on to work in roles directly related to psychology — but only around 1,300 as registered psychologists. Around 10,700 are working in psychology-relevant careers outside the registered professions, in areas many students simply have not considered.</p>
+        <p><strong>The career pathways on this site map to where those graduates actually go.</strong></p>
+      </div>
+    </div>
+
+    <div class="section-label">The psychology graduate pipeline (Nuffield Trust, 2021)</div>
+    <div class="pipeline">
+      <div class="pipeline-step">
+        <div class="pipeline-step-number">25,300</div>
+        <div class="pipeline-step-label">Apply for an undergraduate psychology course each year</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-step-number">20,300</div>
+        <div class="pipeline-step-label">Graduate each year</div>
+        <div class="pipeline-step-sub">Around 1 in 7 do not complete their course</div>
+      </div>
+      <div class="pipeline-step highlight">
+        <div class="pipeline-step-number">12,000</div>
+        <div class="pipeline-step-label">Go into roles directly related to psychology</div>
+        <div class="pipeline-step-sub">But not as registered psychologists</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-step-number">7,000</div>
+        <div class="pipeline-step-label">Go into other roles including marketing, HR, retail and admin</div>
+      </div>
+      <div class="pipeline-step dim">
+        <div class="pipeline-step-number">1,300</div>
+        <div class="pipeline-step-label">Become registered psychologists</div>
+        <div class="pipeline-step-sub">Around 6% of all graduates</div>
+      </div>
+    </div>
+
+    <div class="note-box">The 12,000 in psychology-related roles includes careers in HR, education, welfare, research, behavioural science, public health, forensic and justice services, digital, marketing and the charity sector — all areas where psychological knowledge is directly applied without registration. The career pathways on this site map directly to these roles.</div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">What the data shows at 15 months</div>
+    <h2 class="section-title">Graduate Outcomes: The Reality</h2>
+    <p class="section-body">National data on where psychology graduates end up is typically measured 15 months after graduation. It is a useful snapshot but significantly underestimates long-term psychology career progression — the BPS notes it typically takes at least three years post-graduation to reach the intended career destination.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-number">62%</div>
+        <div class="stat-label">in full or part-time employment 15 months after graduation</div>
+        <div class="stat-source">HESA Graduate Outcomes Survey</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">55%</div>
+        <div class="stat-label">of those employed are working in professional-level roles</div>
+        <div class="stat-source">HESA Graduate Outcomes Survey</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">59%</div>
+        <div class="stat-label">of graduates consider their job to be in the field of psychology — a proportion that increases over time</div>
+        <div class="stat-source">BPS Careers Destination Survey (Morrison Coulthard, 2017)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">69%</div>
+        <div class="stat-label">say their current work fits within their plans for the future</div>
+        <div class="stat-source">HESA Graduate Outcomes Survey</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>The 15-month snapshot understates progression.</strong> Around 29% of psychology graduates have a "not known or not applicable" employment status at 6 months after graduation — comparable to sociology, but far higher than medicine or nursing. Many are still finding their path, completing further study, or in roles that will lead somewhere more relevant. The BPS survey shows that over time graduates consistently move towards more psychology-relevant roles — being in a non-professional role early on is not an indicator of being off-track.</p>
+    </div>
+
+    <div class="note-box"><strong>On the healthcare figure:</strong> Only 27% of psychology graduates are working in healthcare professions 15 months after graduation, compared to the 91% who wanted a mental health career at the start of their degree. But healthcare is one sector among many. Education, welfare, research, business, the civil service, charity, digital and HR all employ large numbers of psychology graduates in directly relevant roles not captured in that figure. The Nuffield Trust explicitly notes that the mismatch between aspiration and 15-month outcomes reflects limited awareness of options, not failure.</div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">For those aiming for clinical psychology specifically</div>
+    <h2 class="section-title">The Clinical Route: What Students Need to Know</h2>
+    <p class="section-body">Clinical psychology is the most popular aspiration among psychology undergraduates and one of the most competitive routes in any profession. Understanding this early allows you to plan properly rather than be caught off guard.</p>
+
+    <div class="finding-grid">
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#E11D48"></div>
+        <div class="finding-title">Only 1 in 6 applicants gets a place</div>
+        <div class="finding-body">Fewer than one in six applicants (15%) gained a place on the Clinical Psychology Doctorate in 2019. Many applicants apply multiple times over several years before being accepted or changing direction.</div>
+        <div class="finding-source">Nuffield Trust, 2021</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#F59E0B"></div>
+        <div class="finding-title">4 in 5 doctoral candidates had 3 or more years of experience</div>
+        <div class="finding-body">Four in five people enrolling on the Clinical Psychology Doctorate in 2019 had at least three years of relevant work experience. Building that experience during and after your degree is not optional — it is the route.</div>
+        <div class="finding-source">Nuffield Trust, 2021</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#7C3AED"></div>
+        <div class="finding-title">Only 4% of undergraduates do work experience during their degree</div>
+        <div class="finding-body">A survey of psychology students who aspired to mental health careers found that only 4% were actually undertaking work experience during their degree (National Collaborating Centre for Mental Health, 2019, cited in Nuffield Trust). This figure relates specifically to that group, but the broader message is consistent with wider evidence — work experience during a psychology degree is significantly underutilised relative to how important it is for competitive career routes.</div>
+        <div class="finding-source">National Collaborating Centre for Mental Health, 2019, cited in Nuffield Trust</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#059669"></div>
+        <div class="finding-title">Around 6% of all graduates become registered psychologists</div>
+        <div class="finding-body">The Nuffield Trust estimates fewer than one in 15 psychology graduates become registered professionals. For the other 94%, a fulfilling psychology-relevant career still exists — just not in a registered clinical role.</div>
+        <div class="finding-source">Nuffield Trust, 2021</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>What this means for you:</strong> If clinical psychology is your goal, start building relevant experience now — not after graduation. If you are not yet sure, explore the full breadth of career options on this site before narrowing your focus. The skills your degree builds — research, analytical thinking, empathy, communication, ethical reasoning — are valued across all career pathways, not just the clinical route.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">What employers are looking for in 2025</div>
+    <h2 class="section-title">Skills Employers Value</h2>
+    <p class="section-body">Across sectors, employers consistently identify the same gaps in graduate applicants — and they are skills that psychology degrees build directly. The challenge is knowing how to demonstrate them with specific evidence.</p>
+
+    <div class="finding-grid">
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#0891B2"></div>
+        <div class="finding-title">Problem solving and analytical thinking</div>
+        <div class="finding-body">CIPD research identifies problem solving as one of the skills employers struggle most to find. Psychology graduates trained in evaluating evidence and reasoning through complexity are well placed — but need to articulate this with specific examples, not just claim it.</div>
+        <div class="finding-source">CIPD Employer Skills Survey</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#4F46E5"></div>
+        <div class="finding-title">Communication and people skills</div>
+        <div class="finding-body">The majority of employers value character, interpersonal skills and professional behaviours above formal qualifications when recruiting graduates. Psychology graduates who can demonstrate empathy, professional communication and teamwork are consistently competitive.</div>
+        <div class="finding-source">CBI/Pearson Education and Skills Survey</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#059669"></div>
+        <div class="finding-title">Work experience provides a major advantage</div>
+        <div class="finding-body">Research suggests that internships, prior work experience and professional networks can substantially improve graduate employment outcomes — in some studies rated as more decisive than the degree itself. With only a small proportion of psychology undergraduates gaining relevant work experience during their degree, those who do gain a significant competitive advantage.</div>
+        <div class="finding-source">Cengage 2025 Graduate Employability Report</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-accent" style="background:#7C3AED"></div>
+        <div class="finding-title">Psychology skills in the AI era</div>
+        <div class="finding-body">The UK Government's AI Labour Market Survey (2025) found that AI roles are increasingly incorporating social sciences including psychology, reflecting demand for human intelligence and ethical expertise. PwC's 2026 AI Jobs Barometer found junior AI-assisted roles are seven times more likely to require human-intensive skills like judgement and leadership.</div>
+        <div class="finding-source">DSIT AI Labour Market Survey 2025; PwC UK AI Jobs Barometer 2026</div>
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">Where to go next</div>
+    <h2 class="section-title">Explore the 11 Career Themes</h2>
+    <p class="section-body">Each of the themes below represents part of that 12,000 — psychology graduates in roles that matter, outside the registered professions. Click any theme to explore the specific roles, skills and next steps.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:1.5rem;">
+      <a href="poc.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">People, Organisations &amp; Consultancy</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="research-data-evaluation.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Research, Data &amp; Evaluation</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="education.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Education</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="marketing-consumer-behavioural.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Marketing, Consumer &amp; Behavioural Insight</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="behavioural-science.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Behavioural Science &amp; Behaviour Change</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="public-services-policy-justice.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Public Services, Policy &amp; Justice</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="charity-third-sector.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Charity &amp; Third Sector</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="sport-exercise.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Sport &amp; Exercise</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="forensic-legal.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Forensic &amp; Legal Psychology</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="digital-technology-hcd.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Digital, Technology &amp; HCD</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+      <a href="mental-health.html" style="background:white;border:1.5px solid #e0e0e0;border-radius:10px;padding:0.9rem 1.1rem;text-decoration:none;display:block;transition:border-color 0.15s,box-shadow 0.15s;" onmouseover="this.style.borderColor='#0891B2';this.style.boxShadow='0 2px 8px rgba(8,145,178,0.1)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow=''">
+        <div style="font-size:13px;font-weight:600;color:#1a3a5c;line-height:1.4;">Mental Health</div>
+        <div style="font-size:11px;color:#0891B2;margin-top:5px;font-weight:600;">Explore &rarr;</div>
+      </a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-label">Sources and further reading</div>
+  <div class="sources-box">
+    <ul class="sources-list">
+      <li>Nuffield Trust (2021) — <a href="https://www.nuffieldtrust.org.uk/research/the-right-track-participation-and-progression-in-psychology-career-paths" target="_blank">The Right Track: Participation and Progression in Psychology Career Paths</a> — Commissioned by the British Psychological Society</li>
+      <li>HESA Graduate Outcomes Survey — <a href="https://luminate.prospects.ac.uk/psychology-graduate-outcomes" target="_blank">Psychology Graduate Outcomes, Luminate/Prospects</a></li>
+      <li>BPS Careers Destination Survey — Morrison Coulthard (2017), cited in Nuffield Trust (2021)</li>
+      <li>National Collaborating Centre for Mental Health (2019) — Cited in Nuffield Trust (2021)</li>
+      <li>CIPD — <a href="https://www.cipd.org/uk/knowledge/reports/employer-skills-view-uk/" target="_blank">Employer Views on Skills Policy in the UK</a></li>
+      <li>CBI/Pearson — Educating for the Modern World: Education and Skills Annual Report</li>
+      <li>Cengage Group (2025) — <a href="https://www.cengagegroup.com/news/press-releases/2025/cengage-group-2025-employability-report/" target="_blank">2025 Graduate Employability Report</a></li>
+      <li>UK Government / DSIT (2025) — <a href="https://www.gov.uk/government/publications/ai-labour-market-survey-2025-report/ai-labour-market-survey-2025-report-executive-summary" target="_blank">AI Labour Market Survey 2025</a></li>
+      <li>PwC UK (2026) — <a href="https://www.pwc.co.uk/services/technology/generative-artificial-intelligence/uk-ai-jobs-barometer.html" target="_blank">AI Jobs Barometer 2026</a></li>
+    </ul>
+  </div>
+
+</div>
+<!-- FOOTER -->
+<div style="background:#142845;padding:1rem 2rem;border-top:1px solid rgba(255,255,255,0.1);">
+  <div style="max-width:960px;margin:0 auto;">
+    <div style="font-size:12px;color:rgba(255,255,255,0.45);line-height:1.6;">This resource was developed as part of a psychology employability internship project at Liverpool Hope University, School of Psychology. Last updated: June 2026. &copy; Liverpool Hope University 2026. Built by David Perkins, Aimee Dutton and Jackson Gray.</div>
+  </div>
+</div>
+</body>
+</html>
